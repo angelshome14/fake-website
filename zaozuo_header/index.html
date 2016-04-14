@@ -1,0 +1,305 @@
+<html !DOCTYPE>
+<head>
+	<title>Zaozuo.com: Jobs Long Fake Wesite</title>
+	<style type="text/css">
+		/*Global Style*/
+		body {
+		  background-color: #2F2E2C;
+		  font-family: Helvetica,Arial,'\5FAE\8F6F\96C5\9ED1';
+		}
+
+		ul,
+		li {
+		  list-style: none;
+		}
+
+		a {
+		  outline: 0;
+		  text-decoration: none;
+		}
+
+		/*Component*/
+		header {
+		  /*Position   */
+		  position: fixed;
+		  left: 0;
+		  top: 0;
+		  z-index: 5;
+		  /*Size*/
+		  width: 100%;
+		  height: 50px;
+		  /*Style*/
+		  background: transparent;
+		}
+
+		header.active {
+			background: url(http://7xrkvy.dl1.z0.glb.clouddn.com/black-layer-09_04c7348.png) repeat left top;		
+		}
+
+		header .logo {
+		  /*Position*/
+		  position: relative;
+		  top: 18px;
+		  float: left;
+		  z-index: 5;
+		  /*Size*/
+		  width: 136px;
+		  height: 36px;
+		  /*Style*/
+		  display: block;
+		  margin-left: 5%;
+		  text-indent: -99999px;
+		  background: url(http://7xrkvy.dl1.z0.glb.clouddn.com/16-4-14/58786011.jpg) no-repeat center;
+		}
+
+		header .menu-bar {
+		  /*Position*/
+		  position: relative;
+		  float: right;
+		  /*Size*/
+		  width: auto;
+		  height: 50px;
+		  /*Style*/
+		  margin-top: 0;
+		  line-height: 50px;
+		}
+
+		header .menu-bar li {
+		  /*Position*/
+		  float: left;
+		  /*Size */
+		  height: 98%;
+		  width: 56px;
+		  /*Style*/
+		  margin-left: 20px;
+		  margin-right: 20px;
+		  color: #fff;
+		  text-align: center;
+		  font-size: 13px;
+		  cursor: pointer;
+		}
+
+		header .menu-bar li.active {
+			border-bottom-style: solid;
+			border-bottom-width: 1px;
+			border-bottom-color: #fff;
+		}
+
+		header .menu-bar li a {
+		  /*Size*/
+		  width: 100%;
+		  height: 100%;
+		  /*Style*/
+		  color: #fff;
+		}
+
+		.share-list {
+		    /*Position*/
+		    position: relative;
+		    float: right;
+		    /*Size*/
+		    width: 60px;
+		    height: 20px;
+		    /*Style*/
+		    margin: 15px 40px 15px 0;  
+		}
+
+		.icon-header-mobile {
+		    /*Position*/
+		    position: absolute;
+		    left: 20px;
+		    top: -6px;
+		    /*Size*/
+		    width: 18px;
+		    height: 31px;
+		    /*Style*/
+		    background-image: url(http://7xrkvy.dl1.z0.glb.clouddn.com/16-4-14/73962753.jpg);
+		    background-repeat: no-repeat;
+		    cursor: pointer;
+		}
+
+		header .header-tags {
+			/*Position*/
+			position: absolute;
+			left: 0;
+			top: 50px;
+			/*Size*/
+			width: 90%;
+			height: auto;
+			/*Style*/
+			padding: 35px 5% 10px;
+	    background: url(http://7xrkvy.dl1.z0.glb.clouddn.com/black-layer-09_04c7348.png) repeat left top;
+	    text-align: center;
+		}
+
+		header .header-tags ul {
+			/*Size*/
+			width: auto;
+	    height: auto;
+	    /*Style*/
+	    display: inline-block;
+	    zoom: 1;
+		}
+
+		header .header-tags ul li {
+			float: left;
+
+			min-width: 60px;
+			height: 95px;
+
+			margin: 0 12px 0 13px;
+			text-align: center;
+			font-size: 12px;
+			color: #737373;
+			cursor: pointer;
+		}
+
+		header .header-tags ul li:hover {
+			color: #fff;
+		}
+
+		header .header-tags ul li:hover .screening-img-hover {
+			display: block;
+		}
+
+		header .header-tags > ul > li > img {
+	    width: 50px;
+	    height: 50px;
+	    margin: 0 auto;
+	    display: block;
+		}
+
+		header .header-tags > ul > li > img.screening-img-hover, 
+		header .header-tags > ul > li:hover >img.screening-img-normal {
+		    display: none;
+		}
+
+		.preheating-banner {
+			position: relative;
+			
+			height: auto;
+			width: 100%;
+
+			overflow: hidden;
+		}
+
+		.preheating-headlayer {
+	    width: 100%;
+	    height: 136px;
+	    position: fixed;
+	    left: 0;
+	    top: 0;
+	    z-index: 4;
+	    background: url(http://7xrkvy.dl1.z0.glb.clouddn.com/header-layer_86737b1.png) repeat-x left top;
+		}
+
+		/* always present */
+		.expand-transition {
+		  transition: all .3s ease;
+		}
+
+		/* .expand-enter defines the starting state for entering */
+		/* .expand-leave defines the ending state for leaving */
+		.expand-enter, .expand-leave {
+		  height: 0;
+		  padding: 0 10px;
+		  opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="animate.css">
+</head>
+
+<body>
+	<header id="header" v-bind:class="{active: activeMenu == 'works'}">
+	  <a href="#" class="logo" shape="rect">造作,works</a>
+	  
+	  <div class="share-list"><div class="icon-header-mobile" title="Your App"></div></div>
+	  
+	  <ul class="menu-bar">
+	    <li 
+	    	v-bind:class="{active: activeMenu == 'home'}" 
+	    	@mouseenter="toggleMenu('home')"><a shape="rect">Home</a></li>
+	    <li 
+	    	v-bind:class="{active: activeMenu == 'works'}" 
+	    	@mouseenter="toggleMenu('works')"><a href="#" shape="rect">All Works</a></li>
+	  </ul>
+
+	  <div 
+	  	class="header-tags animated tada" 
+	  	style="display: none;"
+	  	@mouseleave="toggleMenu()" 
+	  	v-show="activeMenu === 'works'">
+	  	<ul>
+			  <li>
+			  	<img class="screening-img-normal" src="http://astatic.zaozuo.com.cn/818c8e77fafdbb6833b396ed6f602143">
+			  	<img class="screening-img-hover" src="http://astatic.zaozuo.com.cn/b92eba38cc171fa2365f8ea96b1239ab">
+			  	<p>全部</p>
+			  </li>
+			  <li tagid="4">
+			  	<img class="screening-img-normal" src="http://astatic.zaozuo.com.cn/84cdf49d115d26e1b3b6dad1c81cd721">
+			  	<img class="screening-img-hover" src="http://astatic.zaozuo.com.cn/9cd5b401c3faf7b06693b468408b347e">
+			  	<p>沙发</p>
+			  </li>
+			  <li tagid="3">
+			  	<img class="screening-img-normal" src="http://astatic.zaozuo.com.cn/8687d468b92ba3eef28abea73752dda0">
+			  	<img class="screening-img-hover" src="http://astatic.zaozuo.com.cn/76585a9e7d3717e2a6bc90eac319cd39">
+			  	<p>座椅</p>
+			  </li>
+			  <li tagid="2">
+			  	<img class="screening-img-normal" src="http://astatic.zaozuo.com.cn/79dde42bf74818347ff801764dc6ad8c">
+			  	<img class="screening-img-hover" src="http://astatic.zaozuo.com.cn/385a9e976e2bba8cde549e6addfbee36">
+			  	<p>桌几</p>
+			  </li>
+			  <li tagid="5">
+			  	<img class="screening-img-normal" src="http://astatic.zaozuo.com.cn/ab7837ed4cb30d9b17786d88e8fc874c">
+			  	<img class="screening-img-hover" src="http://astatic.zaozuo.com.cn/8588167cfe8b485fefeb88e8f2b058ca">
+			  	<p>柜架</p>
+			  </li>
+			  <li tagid="1">
+			  	<img class="screening-img-normal" src="http://astatic.zaozuo.com.cn/2716c9adf632cdc1a7aaac1f81d3a219">
+			  	<img class="screening-img-hover" src="http://astatic.zaozuo.com.cn/62e3c204486ce7f8ab1b742b80902f1f">
+			  	<p>床</p>
+			  </li>
+			  <li tagid="6">
+			  	<img class="screening-img-normal" src="http://astatic.zaozuo.com.cn/d979785e7104f9788689288f354d9cca">
+			  	<img class="screening-img-hover" src="http://astatic.zaozuo.com.cn/4b7f2cbc2dd0dbf1411fe3cb8a6cbabe">
+			  	<p>家纺</p>
+			  </li>
+			  <li tagid="8">
+			  	<img class="screening-img-normal" src="http://astatic.zaozuo.com.cn/6162546012f635ea1b484f009475faa9">
+			  	<img class="screening-img-hover" src="http://astatic.zaozuo.com.cn/760ef6ca3bb5a9444a42ae61d757a147">
+			  	<p>灯具</p>
+			  </li>
+			  <li tagid="7">
+			  	<img class="screening-img-normal" src="http://astatic.zaozuo.com.cn/f1fd60a262aa151153b42295ba6756a6" data-pin-nopin="true">
+			  	<img class="screening-img-hover" src="http://astatic.zaozuo.com.cn/024a0c2bbdc7253bbe127fae9e7ae8b8" data-pin-nopin="true">
+			  	<p>装饰</p>
+			  </li>
+			</ul>
+	  </div>
+	</header>
+
+
+	<div class="preheating-banner">
+		<div class="preheating-headlayer" style="display: block;"></div>
+	</div>
+
+	<script src="//cdn.bootcss.com/vue/1.0.17/vue.min.js"></script>
+	<script>
+		// create a root instance
+		new Vue({
+		  el: '#header',
+		  data: function () {
+		  	return {
+		  		activeMenu: 'home'
+		    }
+		  },
+		  methods: {
+		  	toggleMenu: function (name = 'home') {
+		  		this.activeMenu = name
+		  	}
+		  }
+		})
+	</script>
+</body>
+</html>
